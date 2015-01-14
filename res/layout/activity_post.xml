@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/ptextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="URL:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/peditText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/pbutton1"
+        android:ems="10"
+        android:inputType="textNoSuggestions"
+        android:text="http://btbu.pw/test.php" />
+
+    <EditText
+        android:id="@+id/peditText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/peditText1"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/peditText1"
+        android:ems="10"
+        android:inputType="textNoSuggestions"
+        android:text="name=ypw&amp;data=test1234" />
+
+    <Button
+        android:id="@+id/pbutton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/peditText1"
+        android:onClick="post"
+        android:text="POST" />
+
+    <TextView
+        android:id="@+id/ptextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/pbutton1"
+        android:text="textView2" />
+
+</RelativeLayout>

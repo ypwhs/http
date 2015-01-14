@@ -1,0 +1,53 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/gettextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="URL:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/geteditText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/gettextView1"
+        android:ems="10"
+        android:inputType="textNoSuggestions"
+        android:text="http://btbu.pw/test.php" >
+
+    </EditText>
+
+    <Button
+        android:id="@+id/getbutton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/geteditText1"
+        android:layout_below="@+id/geteditText1"
+        android:onClick="get"
+        android:text="GET" />
+
+
+    <TextView
+        android:id="@+id/gettextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/getbutton1"
+        android:text="TextView" />
+
+
+
+	</RelativeLayout>
+</ScrollView>
